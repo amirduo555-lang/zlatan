@@ -3,43 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0026</title>
+    <title>랜딩페이지</title>
     <style>
+        /* 기본 여백 완전 초기화 */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* 1. 배경 이미지 (파일명: bg1.png) */
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 1. 배경 이미지 꽉 채우기 */
         .hero-section {
-            position: relative;
             width: 100%;
             height: 100vh;
             background-image: url('bg1.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
         }
 
-        /* 2. 메인 이미지 컨테이너 */
+        /* 2. 메인 이미지 (600px 이상에선 600px, 이하라면 가로 꽉 참) */
         .hero-content {
-            position: relative;
             width: 100%;
             max-width: 600px;
         }
 
-        /* 3. 메인 이미지 (파일명: img1.png) */
         .hero-content img {
             width: 100%;
             height: auto;
             display: block;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
         }
     </style>
 </head>
@@ -47,9 +48,12 @@
 
     <section class="hero-section">
         <div class="hero-content">
-            <img src="img1.png" alt="메인 이미지">
+            <img src="img1.png" alt="사진1">
         </div>
     </section>
+
+</body>
+</html>
 
 </body>
 </html>
