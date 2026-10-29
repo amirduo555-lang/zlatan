@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>랜딩페이지</title>
     <style>
-        /* 여백 초기화 및 기본 배경 검정 */
+        /* 기본 여백 초기화 및 배경 검정 */
         * {
             margin: 0;
             padding: 0;
@@ -19,36 +19,40 @@
 
         /* ---------------- [첫 번째 섹션] ---------------- */
         .hero-section-1 {
-            width: 100%; /* 화면 가로 전체 */
+            width: 100%;
             background: url('bg1.png') no-repeat center center / cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         /* ---------------- [두 번째 섹션] ---------------- */
         .hero-section-2 {
-            width: 100%; /* 화면 가로 전체 꽉 차게 */
+            width: 100%;
             background: linear-gradient(96deg, #424242 0%, #272727 43.75%, #0C0C0C 100%), 
                         linear-gradient(139deg, rgba(96, 6, 2, 0.75) 10.86%, rgba(12, 12, 12, 0.75) 28.13%, rgba(0, 0, 0, 0.75) 65.57%, rgba(54, 9, 7, 0.75) 78.26%), 
                         #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         /* ---------------- [세 번째 섹션] ---------------- */
         .hero-section-3 {
-            width: 100%; /* 화면 가로 전체 꽉 차게 */
+            width: 100%;
             background: linear-gradient(139deg, rgba(96, 6, 2, 0.75) 10.86%, rgba(12, 12, 12, 0.75) 28.13%, rgba(0, 0, 0, 0.75) 65.57%, rgba(54, 9, 7, 0.75) 78.26%), 
                         linear-gradient(96deg, #424242 0%, #0C0C0C 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        /* 공통 이미지 레이아웃 (사진만 가로 최대 600px로 제한) */
-        .img-container {
+        /* 모든 이미지 공통 규칙: 가로 최대 600px 중앙 정렬 */
+        section img {
             width: 100%;
             max-width: 600px;
-            margin: 0 auto; /* 중앙 정렬 */
-        }
-
-        .img-container img {
-            width: 100%;
             height: auto;
-            display: block; /* 이미지 간격 제거 */
+            display: block;
         }
     </style>
 </head>
@@ -56,24 +60,18 @@
 
     <!-- 첫 번째 섹션 -->
     <section class="hero-section-1">
-        <div class="img-container">
-            <img src="img1.png" alt="사진1">
-        </div>
+        <img src="img1.png" alt="사진1">
     </section>
 
     <!-- 두 번째 섹션 -->
     <section class="hero-section-2">
-        <div class="img-container">
-            <img src="img2.png" alt="사진2">
-            <img src="img3.png" alt="사진3">
-        </div>
+        <img src="img2.png" alt="사진2">
+        <img src="img3.png" alt="사진3">
     </section>
 
     <!-- 세 번째 섹션 -->
     <section class="hero-section-3">
-        <div class="img-container">
-            <img src="img4.png" alt="사진4">
-        </div>
+        <img src="img4.png" alt="사진4">
     </section>
 
 </body>
