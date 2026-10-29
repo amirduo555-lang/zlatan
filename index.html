@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>랜딩페이지</title>
     <style>
-        /* 여백 초기화 */
+        /* 여백 초기화 및 기본 배경 검정 설정 */
         * {
             margin: 0;
             padding: 0;
@@ -14,6 +14,7 @@
 
         body {
             width: 100%;
+            background-color: #000; /* 전체 페이지 배경 검정색 */
         }
 
         /* ---------------- [첫 번째 섹션] ---------------- */
@@ -43,7 +44,6 @@
         /* ---------------- [두 번째 섹션] ---------------- */
         .hero-section-2 {
             width: 100%;
-            /* 배경 그라데이션 (그림자 제거됨) */
             background: linear-gradient(96deg, #424242 0%, #272727 43.75%, #0C0C0C 100%), 
                         linear-gradient(139deg, rgba(96, 6, 2, 0.75) 10.86%, rgba(12, 12, 12, 0.75) 28.13%, rgba(0, 0, 0, 0.75) 65.57%, rgba(54, 9, 7, 0.75) 78.26%), 
                         #000;
@@ -53,32 +53,14 @@
             align-items: center;
         }
 
-        /* 두 번째 섹션 내 이미지 스타일 (간격 없음, 최대 600px) */
         .hero-section-2 img {
             width: 100%;
             max-width: 600px;
             height: auto;
             display: block;
         }
-    </style>
-</head>
-<body>
 
-    <!-- 첫 번째 섹션 -->
-    <section class="hero-section-1">
-        <div class="hero-content">
-            <img src="img1.png" alt="사진1">
-        </div>
-    </section>
-
-    <!-- 두 번째 섹션 -->
-    <section class="hero-section-2">
-        <img src="img2.png" alt="사진2">
-        <img src="img3.png" alt="사진3">
-    </section>
-
-</body>
-</html>
-
-</body>
-</html>
+        /* ---------------- [세 번째 섹션] ---------------- */
+        .hero-section-3 {
+            width: 100%;
+            background: linear-gradient(139deg, rgba
