@@ -17,28 +17,15 @@
             background-color: #000;
         }
 
-        /* 공통 이미지 레이아웃 (가로 최대 600px, 이하에선 가로 꽉 참) */
-        .img-container {
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .img-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
         /* ---------------- [첫 번째 섹션] ---------------- */
         .hero-section-1 {
-            width: 100%;
+            width: 100%; /* 화면 가로 전체 */
             background: url('bg1.png') no-repeat center center / cover;
         }
 
         /* ---------------- [두 번째 섹션] ---------------- */
         .hero-section-2 {
-            width: 100%;
+            width: 100%; /* 화면 가로 전체 꽉 차게 */
             background: linear-gradient(96deg, #424242 0%, #272727 43.75%, #0C0C0C 100%), 
                         linear-gradient(139deg, rgba(96, 6, 2, 0.75) 10.86%, rgba(12, 12, 12, 0.75) 28.13%, rgba(0, 0, 0, 0.75) 65.57%, rgba(54, 9, 7, 0.75) 78.26%), 
                         #000;
@@ -46,9 +33,22 @@
 
         /* ---------------- [세 번째 섹션] ---------------- */
         .hero-section-3 {
-            width: 100%;
+            width: 100%; /* 화면 가로 전체 꽉 차게 */
             background: linear-gradient(139deg, rgba(96, 6, 2, 0.75) 10.86%, rgba(12, 12, 12, 0.75) 28.13%, rgba(0, 0, 0, 0.75) 65.57%, rgba(54, 9, 7, 0.75) 78.26%), 
                         linear-gradient(96deg, #424242 0%, #0C0C0C 100%);
+        }
+
+        /* 공통 이미지 레이아웃 (사진만 가로 최대 600px로 제한) */
+        .img-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto; /* 중앙 정렬 */
+        }
+
+        .img-container img {
+            width: 100%;
+            height: auto;
+            display: block; /* 이미지 간격 제거 */
         }
     </style>
 </head>
